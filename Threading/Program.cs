@@ -35,7 +35,7 @@ namespace Threading
         {
             Stopwatch sw = new Stopwatch();
             sw.Start();
-            Task app1Task = RunConsoleAppAsync(app1Path, "app1-arg1", "app1-arg2");
+            Task app1Task = RunConsoleAppAsync(app1Path, "arg1", "arg2", "arg3", "arg4", "arg5");
             Task app2Task = RunConsoleAppAsync(app2Path, "app2-arg1", "app2-arg2");
 
             await Task.WhenAll(app1Task, app2Task);

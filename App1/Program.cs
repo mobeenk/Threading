@@ -5,10 +5,9 @@
         static void Main(string[] args)
         {
             Console.WriteLine("App1 started.");
-
-            for (int i = 0; i < 5; i++)
+            foreach (var item in args)
             {
-                Console.WriteLine($"App1 processing step {i + 1}");
+                Console.WriteLine(item);
                 Thread.Sleep(1000); // Simulate some work
             }
 
